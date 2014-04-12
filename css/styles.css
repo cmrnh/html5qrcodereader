@@ -1,0 +1,36 @@
+.pageWrapper {
+  width: 302px;
+  margin: 0 auto;
+  padding: 20px 0; }
+
+.boxWrapper {
+  float: left;
+  clear: both;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #000000; }
+
+.boxWrapper.auto {
+  height: auto;
+  min-height: 20px; }
+
+#preview {
+  float: left;
+  clear: both;
+  width: 300px;
+  height: 300px; }
+
+#qrContent {
+  float: left;
+  clear: both;
+  width: 300px;
+  height: auto; }
+
+#qrContent p {
+  font-size: 100%;
+  padding: 20px;
+  word-break: break-all;
+  word-wrap: break-word; }
+
+form {
+  margin: 10px auto; }
