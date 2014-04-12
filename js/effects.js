@@ -27,6 +27,7 @@ function qrCodeDecoder(dataUrl) {
 // show info from qr code
 function showInfo(data) {
 	$("#qrContent p").text(data);
-	var redirectUrl = data;
-	window.location = redirectUrl;
+	// Optionally use these lines to redirect:
+	// var redirectUrl = data;
+	// window.location = redirectUrl;
 }
