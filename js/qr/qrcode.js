@@ -29,6 +29,17 @@ qrcode.callback = null;
 
 qrcode.decode = function(src){
     
+    var canvas_qr = src;
+    var context = canvas_qr.getContext('2d');
+    qrcode.width = canvas_qr.width;
+    qrcode.height = canvas_qr.height;
+    qrcode.imagedata = context.getImageData(0, 0, qrcode.width, qrcode.height);
+    qrcode.result = qrcode.process(context);
+    if(qrcode.callback!=null)
+        qrcode.callback(qrcode.result);
+    return qrcode.result;
+
+    /** 
     if(arguments.length==0)
     {
         var canvas_qr = document.getElementById("qr-canvas");
@@ -86,6 +97,7 @@ qrcode.decode = function(src){
         }
         image.src = src;
     }
+    **/
 }
 
 qrcode.isUrl = function(s)

@@ -1,3 +1,4 @@
 Please visit the licences of these plugins here:
 - jQuery: http://jquery.com/
 - QR-code library: https://github.com/LazarSoft/jsqrcode
+- Pixastic: https://github.com/jseidelin/pixastic

@@ -34,3 +34,6 @@
 
 form {
   margin: 10px auto; }
+
+#qr-canvas {
+  display: none; }
