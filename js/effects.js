@@ -32,37 +32,6 @@ $(document).ready(function() {
 	  		}
       }
     });
-
-    /**
-		// FileReader API
-		// https://developer.mozilla.org/en-US/docs/Web/API/FileReader.readAsDataURL
-		var reader = new FileReader();
-
-		reader.onloadend = function () {
-			var preview = $('#preview');
-			preview.src = reader.result;
-
-    	var img = new Image();
-    	img.src = reader.result;
-
-    	img.onload = function() {
-    		// Pixastic.process(img, "desaturate", {average : false});
-    		Pixastic.process(img, "desaturate", {average : false}, function(bwImg) {
-    			console.log('Completed desaturation');
-    			// console.log(bwImg);
-    			Pixastic.process(bwImg, "blurfast", {amount:0.2}, function(blurredBwImg) {
-    				console.log('Completed blur');
-    				// console.log(blurredBwImg);
-
-					  qrcode.decode(blurredBwImg);
-    			});
-    		});
-  		}
-		}
-
-		// Read file
-		reader.readAsDataURL(imageFile);
-		**/
 	});
 });
 
