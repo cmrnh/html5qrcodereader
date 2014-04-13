@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	qrcode.callback = showInfo;
 
-  $('input').change(function(){
+  $('input').change(function() {
   	// Get the first File in the FileList property of <input type="file">
 		var imageFile = $('input').prop('files')[0];
 
@@ -29,7 +29,9 @@ $(document).ready(function() {
     			});
     		});
   		}
+		}
 
+		// Read file
 		reader.readAsDataURL(imageFile);
 	});
 });
