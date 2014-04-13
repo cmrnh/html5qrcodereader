@@ -1,3 +1,8 @@
 Please visit the licences of these plugins here:
 - jQuery: http://jquery.com/
 - QR-code library: https://github.com/LazarSoft/jsqrcode
+<<<<<<< HEAD
+=======
+- Pixastic: https://github.com/jseidelin/pixastic
+- CanvasResize: https://github.com/gokercebeci/canvasResize
+>>>>>>> gh-pages

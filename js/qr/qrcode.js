@@ -29,6 +29,20 @@ qrcode.callback = null;
 
 qrcode.decode = function(src){
     
+<<<<<<< HEAD
+=======
+    var canvas_qr = src;
+    var context = canvas_qr.getContext('2d');
+    qrcode.width = canvas_qr.width;
+    qrcode.height = canvas_qr.height;
+    qrcode.imagedata = context.getImageData(0, 0, qrcode.width, qrcode.height);
+    qrcode.result = qrcode.process(context);
+    if(qrcode.callback!=null)
+        qrcode.callback(qrcode.result);
+    return qrcode.result;
+
+    /** 
+>>>>>>> gh-pages
     if(arguments.length==0)
     {
         var canvas_qr = document.getElementById("qr-canvas");
@@ -86,6 +100,10 @@ qrcode.decode = function(src){
         }
         image.src = src;
     }
+<<<<<<< HEAD
+=======
+    **/
+>>>>>>> gh-pages
 }
 
 qrcode.isUrl = function(s)
