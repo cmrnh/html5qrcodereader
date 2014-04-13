@@ -10,7 +10,10 @@ $(document).ready(function() {
 		var reader = new FileReader();
 
 		reader.onloadend = function () {
-    	var img = new Image(); // document.getElementById('preview');
+			var preview = $('#preview');
+			preview.src = reader.result;
+
+    	var img = new Image();
     	img.src = reader.result;
 
     	img.onload = function() {
