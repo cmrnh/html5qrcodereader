@@ -37,7 +37,7 @@ $(document).ready(function() {
 
 // show info from qr code
 function showInfo(data) {
-	$("#qrContent p").text(data);
+	$("#qrContent").html('<p><a href="' + data + '">' + data + '</a></p>');
 
 	// Optionally use these lines to redirect:
 	// var redirectUrl = data;
